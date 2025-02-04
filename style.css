@@ -151,7 +151,6 @@ body{
         opacity: 1;
         transform: translateX(0);
     }
-    
 }
 
 .section-label{
@@ -465,7 +464,6 @@ body{
 
 .testimonial-text{
     font-size: .875rem;
-
 }
 
 .testimonial-details h3{

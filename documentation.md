@@ -7,9 +7,8 @@ This documentation provides an overview of **StudySync** web project, explaining
 The **StudySync** project is a **responsive, modern landing page** designed for an online learning platform. It includes:  
 ✔ **Navigation bar** with internal links  
 ✔ **Hero section** with call-to-action buttons  
-✔ **Feature highlights** with animations  
 ✔ **Testimonials section** with sliding effects  
-✔ **Newsletter signup**  
+✔ **Newsletter signup section**  
 ✔ **Animated elements using CSS keyframes**  
 
 The project is built using:  
@@ -19,7 +18,7 @@ The project is built using:
 
 ---
 
-**2. File Structure**
+**1. File Structure**
 ```
 /StudySync
 │── index.html    # Main HTML file
@@ -29,7 +28,7 @@ The project is built using:
 
 ---
 
-**3. HTML Explanation (`index.html`)**
+**2. HTML Explanation (`index.html`)**
 The **HTML file** provides the structure of the web page.  
 
 **(a) Navigation Bar**
@@ -69,31 +68,41 @@ The **HTML file** provides the structure of the web page.
     </div>
 </section>
 ```
-- **Animated Text (`animate-text`)** applied using CSS keyframes.  
 - **Buttons with Hover Effects**  
-
----
-
-**(c) Features Section (With Animations)**
-```html
-<div class="feature-grid">
-    <div class="feature-card fade-in">
-        <div class="icon-container">
-            <img src="/assets/PersonalizedLearn.svg" class="feature-svg">
-        </div>
-        <div class="feature-info">
-            <div class="feature-title">Personalized Learning</div>
-            <div class="feature-desc">AI-based learning experience tailored to student needs.</div>
-        </div>
-    </div>
-</div>
 ```
-- **Class `fade-in` adds animation when the section appears on the screen.**  
-- **Feature cards are animated for better UI experience.**  
 
+```
+**(c) Testimonial Section**
+```html
+<div class="testimonial-container">
+      <div class="testimonial-content">
+        <h2 class="testimonial-title">What Others Say About Us</h2>
+        <div class="test-grid">
+          <!-- card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              “StudySync revolutionized my classroom! Engaging content and
+              teacher resources make learning enjoyable. Highly recommended for
+              educators.”
+            </div>
+            <div class="testimonial-avatar">
+              <img src="/assets/avatar1.png" alt="" />
+            </div>
+            <div class="testimonial-details">
+              <h3>Sarah Johnson</h3>
+              <p>8th Grade English Teacher</p>
+            </div>
+          </div>
+```
+- **Used CSS Grid and Flex**
+- **CSS Transform Property**
+- **Hover Effects**
+```
+
+```
 ---
 
-**4. CSS Explanation (`style.css`)**
+**3. CSS Explanation (`style.css`)**
  **(a) Global Styling**
 ```css
 :root {
@@ -182,7 +191,7 @@ The **HTML file** provides the structure of the web page.
 ---
 
 **6. How to Run the Project**
-1. **Download the files** (`index.html` & `style.css`).  
+1. **Download the files and assets** (`index.html` & `style.css`).  
 2. Keep both files in the **same folder**.  
 3. Open `index.html` in a browser (Chrome, Firefox, Edge).  
 4. The animations and responsive design will be visible.  
@@ -190,4 +199,4 @@ The **HTML file** provides the structure of the web page.
 ---
 
 **Conclusion**
-This documentation explains how the **StudySync** web project is structured, styled, and animated. The use of **CSS keyframes** ensures smooth transitions, improving user experience.
+This documentation explains how the **StudySync** web project is structured, styled, and animated. The use of **CSS keyframes** ensures smooth transitions, improving user experience.  
