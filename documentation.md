@@ -31,30 +31,7 @@ The project is built using:
 **2. HTML Explanation (`index.html`)**
 The **HTML file** provides the structure of the web page.  
 
-**(a) Navigation Bar**
-```html
-<header class="header-content">
-    <a href="#logo" class="logo">
-        <img src="/assets/StudySyn.svg" alt="logo" class="logo-icon">
-        <span class="logo-text">StudySync</span>
-    </a>
-    <nav class="nav">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#blog" class="nav-link">Blog</a>
-        <a href="#about" class="nav-link">About</a>
-    </nav>
-    <a href="#contact" class="contact-btn">Contact Us</a>
-</header>
-```
-- **Logo & Branding**
-- **Navigation Menu**
-- **CTA Button (Contact Us)**  
-
----
-
-**(b) Hero Section (Includes Animations)**
+**(a) Hero Section (Includes Animations)**
 ```html
 <section class="main-sect">
     <div class="content-left">
@@ -68,11 +45,9 @@ The **HTML file** provides the structure of the web page.
     </div>
 </section>
 ```
-- **Buttons with Hover Effects**  
-```
-
-```
-**(c) Testimonial Section**
+- **Buttons with Hover Effects**
+  
+**(b) Testimonial Section**
 ```html
 <div class="testimonial-container">
       <div class="testimonial-content">
@@ -97,13 +72,12 @@ The **HTML file** provides the structure of the web page.
 - **Used CSS Grid and Flex**
 - **CSS Transform Property**
 - **Hover Effects**
-```
 
-```
 ---
 
 **3. CSS Explanation (`style.css`)**
- **(a) Global Styling**
+ 
+**(a) Global Styling**
 ```css
 :root {
     --primary-color: #6366f1;
@@ -120,29 +94,10 @@ The **HTML file** provides the structure of the web page.
 - Uses **CSS Variables** for easy theme management.  
 - Ensures consistent styling across the webpage.  
 
----
-
-**(b) Navigation Styling**
-```css
-.nav-link {
-    color: #718096;
-    font-size: 1.125rem;
-    font-weight: 600;
-    transition: color .2s;
-}
-.nav-link:hover {
-    color: var(--primary-color);
-}
-```
-- **Hover effect** on navigation links.  
-
----
-
-**(c) Animations & Keyframes**
+**(b) Animations & Keyframes**
 **1 Fade-In Animation for Main Section**  
 ```css
 .content-left{
-    text-align: center;
     animation: slideFromLeft 1s ease forwards;
     opacity: 0;
 }
@@ -160,8 +115,6 @@ The **HTML file** provides the structure of the web page.
 }
 ```
 - **Main section fade in when they appear.**  
-
----
 
  **(d) Responsive Design- Mobile First Approach**
 ```css
